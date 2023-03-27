@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+div {
+    display: inline-block;
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div:hover {
+    background-color: yellow;
+}
+
+/*Aula 4 - Pseudo Elementos, personalizando Links*/
+
+a {
+    text-decoration: none;
+    color: #00a0e0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #106e6e;
+}
+
+a:active {
+    color: rgb(133, 221, 0);
+}
+
+a.youtube{
+    background-color: rgba(252, 83, 83, 0.795);
+    color: rgb(95, 0, 0);
+}
+
+
+
+a.youtube::before {
+    content: ' ⇒';
+    color: rgb(95, 0, 0);
+}
+
+a.youtube::after {
+    content: '⇐ ';
+    color: rgb(95, 0, 0);
+}
+
+a::after {
+    content: ' [link]';
+    color: black;
+}

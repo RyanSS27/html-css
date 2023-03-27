@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="meuicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Colocando Vídeos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado no meu servidor.</p>
+    <video muted autoplay width="300" controls loop> <!--Poster coloca uma imagem de "thumbnail". Não tinha uma boa imagem para colocar :( -->
+        <source src="midias/video-ceu.ogv" type="video/ogv">
+        <source src="midias/video-ceu.m4v" type="video/m4v">
+        <source src="midias/video-ceu.mp4" type="video/mp4">
+        <source src="midias/video-ceu.webm" type="video/webm">
+        <p>Que porra de navergador merda é esse que você ta usando? Não carrega formato de vídeo nenhum nessa merda.</p>
+    </video>
+
+    <!--O autoplay funciona se o vídeo estiver sem áudio  (use a tag muted antes do autoplay)-->
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/433511095?h=c8d1a2f7cc" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

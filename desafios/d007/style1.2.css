@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+    background-color:  #2e2e2e;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+p {
+    color: white;
+}
+/* #a9a9a9 <- antiga cor de <p> */
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #d3d3d3;
+}
+
+a {
+    color: rgb(75, 159, 255);
+}
+
+strong {
+    color: #d1d1d1;
+}
+
+ul {
+    color: rgb(73, 219, 255);
+}
+
+ol {
+    color: white;
+}
+
+dl {
+    color: white;
+}
+

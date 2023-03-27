@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'nexa';
+    src: url(../fonts/Nexa-Heavy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'noto-bold';
+    src: url(../fonts/noto-sans/NotoSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'noto-regular';
+    src: url(../fonts/noto-sans/NotoSans-Regular.ttf) format('truetype');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*
+border-color: #8e8e8e;
+border-width: 0px 3px 4px 2px #00000025;
+*/
+
+:root {
+    --font-destaque: 'nexa';
+    --font-titulos: 'noto-bold';
+    --font-padrao: 'noto-regular';
+
+    --cor1: #e4dedc;
+    --cor2: #F4F4F4;
+    --cor3: #B8180F;
+    --cor4: #960003;
+}
+
+body {
+    font-family: var(--font-padrao), Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+header {
+    background-image: linear-gradient( #DF292C, var(--cor3), var(--cor4));
+    color: white;
+    text-align: center;
+
+    padding: 20px;
+}
+
+header > h1 {
+    font-family: var(--font-destaque), Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+    margin: 0px;
+}
+
+nav {
+    background-color: #353535;
+    color: white;
+    padding: 5px auto;
+    box-shadow: 0px 6px 6px 4px #00000025;
+}
+
+div.temas {
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    width: 150px;
+    margin: 0px auto;
+    padding-left: 5px;
+}
+
+div.temas:hover {
+    background-color: var(--cor1);
+    color: black;
+    transition: 0.3s;
+    border-style: solid;
+    border-bottom-color: #960003;
+}
+
+div.edicao-do-dia:hover {
+    border-bottom-color: #960003;
+}
+
+div.tecnologia:hover {
+    border-bottom-color: #003e96;
+}
+
+div.humor:hover {
+    border-bottom-color: #ffc400;
+}
+
+div.politica:hover {
+    border-bottom-color: #690096;
+}
+
+div.cultura:hover {
+    border-bottom-color: #1b9600;
+}
+
+div.temas:hover a {
+    color: black;
+    padding-bottom: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin: 0px auto;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0px 6px 6px 4px #00000025;
+}
+
+main h1.titulo-pagina {
+    font-family: var(--font-titulos), Arial, Helvetica, sans-serif;
+    color: #960003;
+    font-size: 2.4em;
+}
+
+section > h2 {
+    font-family: var(--font-titulos), Arial, Helvetica, sans-serif;
+    font-size: 1.9em;
+    color: #353535;
+    border: solid 2px #e4dedc;
+    border-width: 0px 0px 2px 0px;
+    margin: 25px 0px;
+}
+
+section a {
+    color: #B8180F;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #e5372e;
+    text-decoration: underline;
+}
+
+article {
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.container {
+    display: flex;
+}
+
+article img {
+    max-width: 300px;
+    margin: 5px 10px 5px 5px;
+}
+
+.conteudo {
+    display: block;
+    text-align: justify;
+    position: relative;
+}
+
+.conteudo > h3 {
+    font-family: var(--font-titulos), Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.conteudo p {
+    color: #5d5d5d;
+}
+
+aside {
+    position: absolute;
+    top: 82%;
+    font-size: 0.8em;
+}
+
+h4 {
+    color: #353535;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: var(--cor4);
+}

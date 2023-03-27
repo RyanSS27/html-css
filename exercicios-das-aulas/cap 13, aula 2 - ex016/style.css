@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+a {
+    color: rgb(75, 159, 255);
+}
+
+strong {
+    color: black;
+}
+
+ul {
+    color: black;
+}
+
+ol {
+    color: black;
+}
+
+dl {
+    color: black;
+}
+
