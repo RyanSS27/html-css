@@ -6,16 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            height: 100vh;
+            background-color: #d5d5d5;
+            margin: 0px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.7em;
+        }
+
+        main {
+            background-color: white;
+            max-width: 900px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        p {
+            font-size: 1.1em;
+            text-align: justify;
+            text-indent: 30px;
+        }
+
         table {
             border-collapse: collapse;
             width: 500px;
+            border: 2px solid black;
+            position: relative;
+            margin: auto;
         }
 
         caption {
-            background-color: #565656;
-            color: white;
+            background-color: #e5e5e5ad;
             font-size: 1.1em;
-            border: 1px solid black;
+            border: 2px solid black;
             border-bottom: 0px;
             padding: 5px;
         }
@@ -24,14 +53,27 @@
             background-color: #cccccc;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: #e5e5e5ad;
+        }
+
+        tbody > tr:hover {
+            background-color: #fff7007b;
+        }
+
         td {
-            background-color: #f3f3f3ad;
             border: 1px solid black;
             padding: 5px;
         }
 
         th {
-            background-color: #d9d9d9;
+            background-color: #454545;
+            color: white;
             border: 1px solid black;
             padding: 5px;
         }
@@ -45,59 +87,73 @@
 </head>
 
 <body>
-    <table>
-        <caption><strong>População dos Estados do Brasil</strong></caption>
+    <main>
+        <h1>Tabelas em HTML e CSS</h1>
+        <p>Esse foi um exercício que trabalha com tabelas de muitos dados, as chamadas <q>Tabelas Complexas</q>. Tente rolar a página ou passar o mouse na tabela para observar como ela se comporta.</p>
+        <table>
+            <caption><strong>População dos Estados do Brasil</strong></caption>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th style="width: 150px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td> <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">16 615 526</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td> <td class="num">10 444 526</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">10 693 929</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td> <td class="num">8 796 448</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">8 452 381</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">7 581 051</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">6 248 436</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>População Total</th>
+                <td class="num"><strong>210 147 125</strong></td>
+            </tfoot>
+        </table>
 
-        <thead>
-            <tr>
-                <th>Estado</th> 
-                <th style="width: 150px;">População</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">41 262 199</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td> <td class="num">19 597 330</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">16 615 526</td>
-            </tr>
-            <tr>
-                <td>Bahia</td>
-                <td class="num">14 016 906</td>
-            </tr>
-            <tr>
-                <td>Paraná</td> <td class="num">10 444 526</td>
-            </tr>
-            <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="num">10 693 929</td>
-            </tr>
-            <tr>
-                <td>Pernambuco</td> <td class="num">8 796 448</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td class="num">8 452 381</td>
-            </tr>
-            <tr>
-                <td>Pará</td> 
-                <td class="num">7 581 051</td>
-            </tr>
-            <tr>
-                <td>Santa Catarina</td> 
-                <td class="num">6 248 436</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <th>População Total</th>
-            <td class="num"><strong>210 147 125</strong></td>
-        </tfoot>
-    </table>
+        <h2>Regiões do Brasil</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eaque nulla, necessitatibus iste quasi sapiente quidem dolore ipsum numquam suscipit, tempora adipisci quisquam animi facere, quaerat corporis magni obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ab libero dignissimos perspiciatis voluptas nisi sapiente excepturi corporis eos tempora ut quibusdam accusamus magnam ipsum delectus temporibus, omnis iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum perferendis autem quisquam obcaecati veritatis maxime distinctio quia laborum, dicta molestias. Et eum odit saepe consequatur dolorem repellat voluptas possimus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eaque nulla, necessitatibus iste quasi sapiente quidem dolore ipsum numquam suscipit, tempora adipisci quisquam animi facere, quaerat corporis magni obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ab libero dignissimos perspiciatis voluptas nisi sapiente excepturi corporis eos tempora ut quibusdam accusamus magnam ipsum delectus temporibus, omnis iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum perferendis autem quisquam obcaecati veritatis maxime distinctio quia laborum, dicta molestias. Et eum odit saepe consequatur dolorem repellat voluptas possimus?</p>
+
+        <h2>Estados, municípios e distritos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eaque nulla, necessitatibus iste quasi sapiente quidem dolore ipsum numquam suscipit, tempora adipisci quisquam animi facere, quaerat corporis magni obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ab libero dignissimos perspiciatis voluptas nisi sapiente excepturi corporis eos tempora ut quibusdam accusamus magnam ipsum delectus temporibus, omnis iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum perferendis autem quisquam obcaecati veritatis maxime distinctio quia laborum, dicta molestias. Et eum odit saepe consequatur dolorem repellat voluptas possimus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eaque nulla, necessitatibus iste quasi sapiente quidem dolore ipsum numquam suscipit, tempora adipisci quisquam animi facere, quaerat corporis magni obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ab libero dignissimos perspiciatis voluptas nisi sapiente excepturi corporis eos tempora ut quibusdam accusamus magnam ipsum delectus temporibus, omnis iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum perferendis autem quisquam obcaecati veritatis maxime distinctio quia laborum, dicta molestias. Et eum odit saepe consequatur dolorem repellat voluptas possimus?</p>
+
+        <h2>Diversidade cultural</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis eaque nulla, necessitatibus iste quasi sapiente quidem dolore ipsum numquam suscipit, tempora adipisci quisquam animi facere, quaerat corporis magni obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam ab libero dignissimos perspiciatis voluptas nisi sapiente excepturi corporis eos tempora ut quibusdam accusamus magnam ipsum delectus temporibus, omnis iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum perferendis autem quisquam obcaecati veritatis maxime distinctio quia laborum, dicta molestias. Et eum odit saepe consequatur dolorem repellat voluptas possimus?</p>
+    </main>
 </body>
 
 </html>
