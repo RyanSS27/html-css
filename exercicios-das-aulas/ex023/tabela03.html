@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 330px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        img {
+            margin: 10px 5px;
+            transform: rotate(90deg);
+            max-height: 50px;
+        }
+
+        .destaque {
+            background-color: rgb(127, 240, 255);
+        }
+    </style>
+    <title>Mesclagem de células</title>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td class="destaque">B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td class="destaque">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+    </table>
+    <img src="25606.png" alt="seta para baixo">
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td class="destaque" colspan="2">B</td>
+        </tr>
+        <tr>
+            <td class="destaque" rowspan="2">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+    </table>
+</body>
+</html>
