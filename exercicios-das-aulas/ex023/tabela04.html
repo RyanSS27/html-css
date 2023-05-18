@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            height: 250px;
+            width: 700px;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-bottom: 0px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <th scope="col" style="width: 100px;">Grupo</th>
+            <th scope="col" style="width: 130px;">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Paula</td>
+                <td>Homem Aranha</td>
+                <td>Wall-e</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Matriz</td>
+                <td>Taxi Driver</td>
+                <td>A Rede Social</td>
+            </tr>
+            <tr>
+                <td>Micaela</td>
+                <td>300</td>
+                <td>Matriz</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Ryan</td>
+                <td>Rocky</td>
+                <td>Homem Aranha 2</td>
+                <td>Super Choque</td>
+            </tr>
+            <tr>
+                <td>Jhonatan</td>
+                <td>Patrulha Canina</td>
+                <td>Jovens Titans</td>
+                <td>Carros</td>
+            </tr>
+            <tr>
+                <td>Kayo</td>
+                <td>Clube da Luta</td>
+                <td>Cidade de Deus</td>
+                <td>Tropa de Elite</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
