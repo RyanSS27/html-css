@@ -10,11 +10,25 @@
             margin: auto;
         }
 
+        div#container {
+            width: 90vw;
+            overflow-x: auto;
+            margin: auto;
+        }
+
         caption {
+            background-color: #535353;
+            color: white;
             font: normal bold 1.3em 'Times New Roman', times, serif;
             border: 1px solid black;
             border-bottom: 0px;
             padding: 5px;
+        }
+
+        th {
+            background-color: #535353;
+            color: white;
+            font: normal 1.1em 'Times New Roman', times, serif; 
         }
 
         th, td {
@@ -22,12 +36,9 @@
             padding: 5px;
         }
 
-        div#container {
-            width: 90vw;
-            overflow-x: auto;
-            margin: auto;
+        tbody > tr:nth-child(even) {
+            background-color: #efefef;
         }
-
     </style>
     <title>Responsividade em Tabelas</title>
 </head>
