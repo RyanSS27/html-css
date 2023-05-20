@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: #313131;
+            color: white;
+            font: normal bold 1.3em 'Times New Roman', Times, serif;
+            border: 1px solid black;
+            border-bottom: 0px;
+            padding: 5px;
+        }
+
+        th {
+            font: normal bold 1.1em 'Times New Roman', Times, serif;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .nomes {
+            background-color: #a4ceffe4;
+        }
+
+        .destaques {
+            background-color: #ffe585;
+        }
+    </style>
+    <title>Exércícios de Tabela</title>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nomes">
+            <col>
+            <col class="destaques" span="2">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Paula</td>
+                <td>F</td>
+                <td>16</td>
+                <td>Psicóloga</td>
+            </tr>
+            <tr>
+                <td>Bruna</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>Caio</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Youtuber</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>M</td>
+                <td>20</td>
+                <td>Uber</td>
+            </tr>
+            <tr>
+                <td>Micaela</td>
+                <td>F</td>
+                <td>18</td>
+                <td>Professora</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
