@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <h1>Exemplo de formulário</h1>
+        <p><label for="iest">Estados</label>
+        <select name="est" id="iest">
+            <option value="Seleção">Selecione</option>
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+        </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="profrecomendadas">
+            <datalist id="profrecomendadas">
+                    <option value="Dev">Desenvolvedor</option>
+                    <option value="Vigilante">Vigilante</option>
+                    <option value="Balconista">Balconista</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="idescr">Descrição</label>
+            <textarea style="resize: none;" name="descr" id="idescr" cols="30" rows="5"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
