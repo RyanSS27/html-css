@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* Todas as outras */
+
+/* Aqui eu vou fazer a separação das outras medias utilizando a regra @media. Assim, não sendo nescessario a criação de 1 estilo individual para cada tipo de tela.*/
+
+@media print {
+    
+}
