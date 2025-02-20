@@ -1,4 +1,2 @@
 # html-css
- Cursos de HTML e CSS3 do CursoemVídeo
-
- Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
+ Aqui estão os exerícios e práticas que fiz durante os meus estudos de HTML5, CSS3 e boas práticas do desenvolvimento web!
